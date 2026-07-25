@@ -184,16 +184,20 @@ html, body {
 /* APP SCREENSHOT */
 .app-preview {
   float: right;
-  width: 40%;
+  width: 38%;
   margin-left: 30px;
   margin-bottom: 20px;
+  opacity: 0.85; /* subtiel */
+  mask-image: radial-gradient(circle, black 70%, transparent 100%);
+  -webkit-mask-image: radial-gradient(circle, black 70%, transparent 100%);
 }
 
 .app-preview img {
   width: 100%;
-  border-radius: 20px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  border-radius: 22px;
+  filter: drop-shadow(0 6px 14px rgba(0,0,0,0.15));
 }
+
 
 /* Mobiel: screenshot onder de tekst */
 @media (max-width: 800px) {
@@ -206,6 +210,31 @@ html, body {
 
   .app-preview img {
     width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.section-divider {
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #E79907 0%, #F2C15A 100%);
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+@media (max-width: 800px) {
+  .app-preview {
+    float: none;
+    width: 100%;
+    margin: 20px 0;
+    mask-image: none; /* fade weghalen voor mobiel */
+    -webkit-mask-image: none;
+    opacity: 1;
+    text-align: center;
+  }
+
+  .app-preview img {
+    width: 85%;
     margin: 0 auto;
   }
 }

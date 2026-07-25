@@ -6,17 +6,18 @@
   color: white;
   position: relative;
   animation: fadeIn 1.2s ease;
+  overflow: hidden; /* voorkomt mobiele layout-breuk */
 }
 
 /* Glow achter logo */
 .hero::before {
   content: "";
   position: absolute;
-  top: -80px;
+  top: -120px;
   left: 50%;
   transform: translateX(-50%);
-  width: 600px;
-  height: 600px;
+  width: 380px;        /* kleiner zodat mobiel niet breekt */
+  height: 380px;
   background: radial-gradient(circle, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0) 70%);
   filter: blur(40px);
   z-index: 0;
@@ -56,4 +57,16 @@
   .logo {
     width: 260px;
   }
+
+  .hero::before {
+    width: 260px;
+    height: 260px;
+    top: -80px;
+  }
+}
+
+/* Prevent horizontal scroll */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
 }

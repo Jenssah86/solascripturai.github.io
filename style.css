@@ -16,6 +16,7 @@ body {
   position: relative;
   animation: fadeIn 1.2s ease;
   z-index: 2; /* FIX */
+  margin-bottom: 20px;
 }
 
 .hero::before {
@@ -215,14 +216,14 @@ html, body {
 }
 
 .section-divider {
+  box-shadow: 0 0 12px rgba(231, 153, 7, 0.55);
   width: 100%;
   height: 8px;
-  position: relative;
-  margin: 0 auto 20px;
   background: linear-gradient(90deg, #E79907 0%, #F2C15A 50%, #E79907 100%);
-  border-radius: 4px;
-  animation: dividerFade 1.2s ease forwards;
-  box-shadow: 0 0 12px rgba(231, 153, 7, 0.55); /* glow */
+  background-color: rgba(0,0,0,0.05); /* subtiel contrast */
+  margin: 0 auto 20px;
+  position: relative;
+  z-index: 10;
 }
 
 .section-divider::after {
@@ -236,6 +237,7 @@ html, body {
   text-shadow: 0 0 6px rgba(231, 153, 7, 0.6);
   animation: dividerFade 1.4s ease forwards;
 }
+
 
 @media (max-width: 800px) {
   .app-preview {

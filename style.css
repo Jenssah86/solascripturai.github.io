@@ -15,6 +15,7 @@ body {
   color: white;
   position: relative;
   animation: fadeIn 1.2s ease;
+  z-index: 1;
 }
 
 /* Subtiele lichtglow achter het logo */
@@ -28,7 +29,7 @@ body {
   height: 600px;
   background: radial-gradient(circle, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0) 70%);
   filter: blur(40px);
-  z-index: 0;
+  z-index: -1;
 }
 
 .hero-inner {
@@ -184,20 +185,19 @@ html, body {
 /* APP SCREENSHOT */
 .app-preview {
   float: right;
-  width: 38%;
-  margin-left: 30px;
-  margin-bottom: 20px;
-  opacity: 0.85; /* subtiel */
-  mask-image: radial-gradient(circle, black 70%, transparent 100%);
-  -webkit-mask-image: radial-gradient(circle, black 70%, transparent 100%);
+  width: 28%;              /* kleiner */
+  margin-left: 25px;
+  margin-bottom: 15px;
+  opacity: 0.75;           /* subtiel */
+  mask-image: radial-gradient(circle, black 60%, transparent 100%);
+  -webkit-mask-image: radial-gradient(circle, black 60%, transparent 100%);
 }
 
 .app-preview img {
   width: 100%;
-  border-radius: 22px;
-  filter: drop-shadow(0 6px 14px rgba(0,0,0,0.15));
+  border-radius: 18px;     /* iets subtieler */
+  filter: drop-shadow(0 4px 10px rgba(0,0,0,0.12));
 }
-
 
 /* Mobiel: screenshot onder de tekst */
 @media (max-width: 800px) {

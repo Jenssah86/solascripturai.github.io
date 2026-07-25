@@ -96,12 +96,12 @@ html, body {
 }
 
 .section-divider::after {
-  content: "✝";
+  content: "";
   position: absolute;
   top: -26px; /* iets hoger zodat het mooi boven de dunne lijn staat */
   left: 50%;
   transform: translateX(-50%);
-  font-size: 150px; /* GROTER KRUIS */
+  font-size: 50px; /* GROTER KRUIS */
   color: #E79907;
   text-shadow: 0 0 8px rgba(231,153,7,0.6);
 }

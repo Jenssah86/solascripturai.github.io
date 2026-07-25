@@ -21,7 +21,7 @@
 
 /* LOGO GROTER + PERFECT CENTREREN */
 .logo {
-  width: 360px;          /* groter logo */
+  width: 480px;          /* groter logo */
   max-width: 90vw;       /* responsive */
   margin: 0 auto 40px;   /* centreren */
   display: block;        /* centreren fix */

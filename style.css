@@ -10,7 +10,7 @@ body {
 /* HERO */
 .hero {
   text-align: center;
-  padding: 80px 20px 100px;
+  padding: 30px 20px 40px;
   background: linear-gradient(180deg, #8FA06A 0%, #D9D2BE 40%, #F7F7F7 100%);
   color: white;
   position: relative;
@@ -98,7 +98,7 @@ body {
 .content {
   max-width: 900px;
   margin: auto;
-  padding: 50px 20px;
+  padding: 30px 20px;
   line-height: 1.7;
   font-size: 18px;
 }
@@ -174,3 +174,10 @@ footer {
     font-size: 16px;
   }
 }
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  touch-action: manipulation;
+}
+

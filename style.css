@@ -345,19 +345,19 @@ a{
 
     margin:0 auto 24px;
 
-    color:#555;
+    color:#8FA06A;
 
     line-height:1.9;
 
     font-size:18px;
 
-    text-align:left;
+    text-align:center;
 
 }
 
 .content strong{
 
-    color:#333;
+    color:#8FA06A;
 
     font-weight:700;
 
@@ -371,11 +371,53 @@ a{
 
     display:flex;
 
-    justify-content:center;
-
     align-items:center;
 
-    margin:55px auto;
+    justify-content:center;
+
+    gap:70px;
+
+    max-width:1100px;
+
+    margin:80px auto;
+
+    padding:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.preview-text{
+
+    flex:1;
+
+    min-width:300px;
+
+    max-width:500px;
+
+    text-align:left;
+
+}
+
+.preview-text h2{
+
+    color:#8FA06A;
+
+    margin-bottom:20px;
+
+    font-size:32px;
+
+}
+
+.preview-text p{
+
+    text-align:left;
+
+    color:#555;
+
+    line-height:1.9;
+
+    font-size:18px;
 
 }
 
@@ -383,30 +425,23 @@ a{
 
     width:340px;
 
-    max-width:100%;
-
     border-radius:28px;
 
     box-shadow:
-        0 22px 55px rgba(0,0,0,.16);
+        0 24px 55px rgba(0,0,0,.16);
 
-    transition:
-        transform .35s ease,
-        box-shadow .35s ease;
+    transition:.3s;
 
 }
 
 .app-preview img:hover{
 
-    transform:
-        translateY(-6px)
-        scale(1.02);
+    transform:translateY(-6px);
 
     box-shadow:
-        0 30px 70px rgba(0,0,0,.20);
+        0 30px 70px rgba(0,0,0,.22);
 
 }
-
 /* ==========================================================
    INSTAGRAM CARD
 ========================================================== */

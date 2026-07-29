@@ -821,18 +821,29 @@ img{
     }
 
     .instagram-card{
-        margin:60px auto;
-        padding:28px 20px;
-        border-radius:20px;
-    }
+
+    max-width:620px;
+    margin:55px auto;
+    padding:28px 32px;
+    background:#fff;
+    border-radius:22px;
+    text-align:center;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+}
 
     .instagram-icon{
-        font-size:48px;
+        font-size:42px;
+        margin-bottom:10px;
     }
 
     .content li{
         padding:16px 18px;
         font-size:16px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        text-align:center;
     }
 
     .slogan{
@@ -886,7 +897,11 @@ img{
     }
 
     .instagram-card p{
-        font-size:15px;
+        max-width:480px;
+        margin:0 auto 22px;
+        font-size:16px;
+        line-height:1.7;
+        color:#666;
     }
 
     .btn{

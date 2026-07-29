@@ -200,3 +200,23 @@ footer {
   .hero-tagline { font-size: 18px; }
   .btn { padding: 14px 22px; font-size: 16px; }
 }
+
+.instagram {
+    background: linear-gradient(45deg,
+        #405DE6,
+        #5851DB,
+        #833AB4,
+        #C13584,
+        #E1306C,
+        #FD1D1D,
+        #FCAF45,
+        #FFDC80);
+    color: #fff;
+    font-weight: 600;
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.instagram:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,.25);
+}

@@ -1024,8 +1024,10 @@ footer .legal-links a:hover {
 
 .screenshot-grid{
     display:grid;
-    grid-template-columns:repeat(5, minmax(0, 1fr));
-    gap:24px;
+    grid-template-columns:1fr;
+    width:min(100%, 420px);
+    margin:0 auto;
+    gap:30px;
     align-items:start;
 }
 
@@ -1082,18 +1084,6 @@ footer .legal-links a:hover {
         margin:62px auto;
     }
 
-    .screenshot-grid{
-        grid-template-columns:repeat(2, minmax(0, 1fr));
-        gap:16px;
-    }
-
-    .screenshot-card,
-    .screenshot-card--featured,
-    .screenshot-card:nth-last-child(2),
-    .screenshot-card:last-child{
-        grid-column:auto / span 1;
-    }
-
     .screenshot-card figcaption{
         min-height:0;
         padding:14px;
@@ -1101,10 +1091,6 @@ footer .legal-links a:hover {
 }
 
 @media (max-width:480px){
-    .screenshot-grid{
-        grid-template-columns:1fr;
-    }
-
     .screenshot-card--featured{
         grid-column:span 1;
     }

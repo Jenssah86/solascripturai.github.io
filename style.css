@@ -1045,7 +1045,7 @@ footer .legal-links a:hover {
 }
 
 .screenshot-card--featured{
-    grid-column:span 2;
+    grid-column:span 1;
 }
 
 .screenshot-card img{
@@ -1084,10 +1084,6 @@ footer .legal-links a:hover {
     .screenshot-grid{
         grid-template-columns:repeat(2, minmax(0, 1fr));
         gap:16px;
-    }
-
-    .screenshot-card--featured{
-        grid-column:span 2;
     }
 
     .screenshot-card figcaption{

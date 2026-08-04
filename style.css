@@ -1053,9 +1053,7 @@ footer .legal-links a:hover {
 
 .screenshot-card img{
     width:100%;
-    aspect-ratio:9 / 16;
-    object-fit:cover;
-    object-position:top center;
+    height:auto;
     background:#f6f2e8;
 }
 
@@ -1095,10 +1093,6 @@ footer .legal-links a:hover {
         grid-column:span 1;
     }
 
-    .screenshot-card img{
-        max-height:540px;
-        object-fit:contain;
-    }
 }
 
 /* ==========================================================

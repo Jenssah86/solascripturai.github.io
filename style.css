@@ -1024,13 +1024,13 @@ footer .legal-links a:hover {
 
 .screenshot-grid{
     display:grid;
-    grid-template-columns:repeat(6, minmax(0, 1fr));
+    grid-template-columns:repeat(5, minmax(0, 1fr));
     gap:24px;
     align-items:start;
 }
 
 .screenshot-card{
-    grid-column:span 2;
+    grid-column:auto;
     overflow:hidden;
     margin:0;
     background:#fff;
@@ -1046,16 +1046,7 @@ footer .legal-links a:hover {
 }
 
 .screenshot-card--featured{
-    grid-column:span 1;
-}
-
-/* With five screenshots, center the final pair beneath the first row. */
-.screenshot-card:nth-last-child(2){
-    grid-column:2 / span 2;
-}
-
-.screenshot-card:last-child{
-    grid-column:4 / span 2;
+    grid-column:auto;
 }
 
 .screenshot-card img{
